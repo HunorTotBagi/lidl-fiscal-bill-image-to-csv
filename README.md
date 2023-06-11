@@ -41,5 +41,8 @@ The code performs the following tasks:
 ## Outputs
 
 ### exported_products.csv
+CSV file that countains the product name and the ammount * proce in the `=price*amount` format
 
 ### exported_products.txt
+TXT file that countains the product name and the ammount * proce in the `=price*amount` format
+
