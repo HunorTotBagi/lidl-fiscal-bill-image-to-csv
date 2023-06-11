@@ -16,6 +16,12 @@ pip install pytesseract
 
 ## Data
 
+The data consists of images obtained by downloading them from the Lidl application.
+
+## Code
+
+The code performs the following tasks:
+
 - The code defines the start and end strings to identify the desired substring that contains the product name and price
 - The `find_substring` function is defined to find the index of the first occurrence of a substring within a string
 - The start and end indices of the desired substring are found using the `find_substring` function
@@ -31,3 +37,9 @@ pip install pytesseract
 - The populated data frame is returned
 - The `create_df` function is called with the `clean_lines` input, and the resulting data frame is assigned to the variable df
 - The resulting data frame is printed
+
+## Outputs
+
+### exported_products.csv
+
+### exported_products.txt
