@@ -1,5 +1,20 @@
+# Lidl Fiscal Bill Image to CSV
+
 The objective was to develop a script capable of scanning an image, specifically a fiscal bill from Lidl. Fortunately, Lidl possesses its own application, which generates high-quality images, thereby simplifying the extraction process.
-The intended outcome entails presenting a product name in the first column, accompanied by the formula `=price*amount` in the adjacent column. This particular format is chosen due to its practicality, as it allows for seamless transfer into Excel or Google Sheets. The purpose behind this format is to facilitate immediate calculation of the total amount, aligning with the objective.
+The outcome have the product name in the first column, accompanied by the formula `=price*amount` in the adjacent column. This particular format is chosen due to its practicality, as it allows for seamless transfer into Excel or Google Sheets.
+
+## Prerequisites
+
+Before running the code, ensure that you have the following dependencies installed: 
+- `pytesseract`
+- `cv2`
+
+You can install these libraries using `pip`:
+```
+pip install pytesseract
+```
+
+## Data
 
 - The code defines the start and end strings to identify the desired substring that contains the product name and price
 - The `find_substring` function is defined to find the index of the first occurrence of a substring within a string
